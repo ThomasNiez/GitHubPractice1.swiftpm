@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MyView: View {
+struct HeaderView: View {
     @Binding var tasks: [Task]
     @State var enteredString = ""
     var body: some View {
@@ -22,4 +22,3 @@ struct MyView: View {
         }
     }
 }
-// Test
