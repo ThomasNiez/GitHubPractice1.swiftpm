@@ -13,12 +13,13 @@ struct HeaderView: View {
     var body: some View {
         HStack {
             TextField("", text: $enteredString)
+                .textFieldStyle(.roundedBorder)
             Button {
                 tasks.append(Task(nameOfTask: enteredString))
             } label: {
                 Text("Add Task")
             }
-
         }
+        .padding()
     }
 }
